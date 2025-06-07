@@ -30,6 +30,29 @@ SortingVisualizer/
 ├── scripts/
 │ ├── app.js
 │ ├── helper.js
-│ └── sort-algorithms.js
+│ └── sort.js
 
-![Visualizer Screenshot](
+![Visualizer Screenshot](sorting-visualizer.png)
+
+## 💡 How to Use
+
+1. Select a sorting algorithm.
+2. Choose the array size and speed.
+3. Click **Generate Array** to create a new random array.
+4. Hit **Start Sorting** to see the magic.
+
+---
+
+## 🌐 Built With
+
+- HTML5
+- CSS3 (with modern variables and layout)
+- Vanilla JavaScript (ES6+)
+- GitHub Pages
+
+---
+
+## 👨‍💻 Author
+
+Created by **Karthik Palam**  
+🔗 [GitHub](https://github.com/karthik6132)
