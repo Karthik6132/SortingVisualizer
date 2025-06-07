@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sorting Visualizer</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header class="title">Sorting Visualizer</header>
+
+  <nav class="navbar">
+    <select class="algo-menu">
+      <option value="0">Select Algorithm</option>
+      <option value="1">Bubble Sort</option>
+      <option value="2">Selection Sort</option>
+      <option value="3">Insertion Sort</option>
+      <option value="4">Merge Sort</option>
+      <option value="5">Quick Sort</option>
+    </select>
+
+    <select class="speed-menu">
+      <option value="1">Slow</option>
+      <option value="3">Medium</option>
+      <option value="5">Fast</option>
+    </select>
+
+    <select class="size-menu">
+      <option value="20">Small</option>
+      <option value="40">Medium</option>
+      <option value="60">Large</option>
+    </select>
+
+    <button class="start">Start</button>
+  </nav>
+
+  <main class="center">
+    <div class="array"></div>
+  </main>
+
+  <footer>
+    <p>Made with ❤️ by Karthik</p>
+  </footer>
+
+  <script src="helper.js"></script>
+  <script src="sort.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

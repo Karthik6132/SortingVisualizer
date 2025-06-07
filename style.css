@@ -1,0 +1,114 @@
+:root {
+  --primary: #ffffff;
+  --accent: #3498db;
+  --highlight: #2ecc71;
+  --visited: #f1c40f;
+  --current: #e67e22;
+  --min: #e74c3c;
+  --done: #9b59b6;
+  --text: #2c3e50;
+  --shadow: rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background-color: var(--primary);
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  padding: 1rem;
+  font-size: 2rem;
+  background-color: var(--accent);
+  color: white;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 2px 4px var(--shadow);
+}
+
+.navbar {
+  background: #ecf0f1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+
+.navbar select,
+.navbar button {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-weight: bold;
+  cursor: pointer;
+  background: white;
+  transition: all 0.3s ease;
+}
+
+.navbar button:hover,
+.navbar select:hover {
+  background: var(--accent);
+  color: white;
+}
+
+.center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.array {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 400px;
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  gap: 2px;
+}
+
+.cell {
+  width: 100%;
+  max-width: 10px;
+  background: #bdc3c7;
+  transition: all 0.3s ease;
+}
+
+.cell.current {
+  background-color: var(--current);
+}
+
+.cell.min {
+  background-color: var(--min);
+}
+
+.cell.visited {
+  background-color: var(--visited);
+}
+
+.cell.done {
+  background-color: var(--done);
+}
+
+footer {
+  padding: 1rem;
+  text-align: center;
+  font-size: 1rem;
+  color: var(--text);
+}
